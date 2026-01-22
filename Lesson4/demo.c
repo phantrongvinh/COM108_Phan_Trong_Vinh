@@ -66,6 +66,6 @@ void main()
     else
     {
         trungBinh = tong / i;
+        printf("Trung binh cac so chia het cho 2: %.2f", trungBinh);
     }
-    printf("Trung binh cac so chia het cho 2: %.2f", trungBinh);
 }
