@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int tinhTong(int a, int b)
 {
@@ -17,7 +18,12 @@ float tinhTich(float a, float b)
 
 float tinhThuong(float a, float b)
 {
-    return a / b;
+    if(b!=0){
+
+        return a / b;
+    }else{
+        return NAN;
+    }
 }
 
 void main()
@@ -33,7 +39,7 @@ void main()
     result = tinhTich(a, b);
     printf("Tich 2 so %.2f va %.2f la: %.2f\n", a, b, result);
 
-    if (b == 0)
+    if (!tinhThuong(a,b))
     {
         printf("Khong the chia cho 0\n");
     }
