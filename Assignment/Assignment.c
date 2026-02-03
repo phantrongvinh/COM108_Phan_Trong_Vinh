@@ -5,8 +5,9 @@ void main()
 {
 
     int choice = 0;
+    int isTrue = 1;
 
-    while (true)
+    while (isTrue)
     {
         printf("******************************************************************\n"
                "Chương trình chức năng: \n"
@@ -57,8 +58,8 @@ void main()
             printf("Chức năng số 10: Xây dựng chương trình tính toán phân só\n");
             break;
         case 0:
-            printf("Thoát chương trình");
-            return;
+            isTrue = 0;
+            break;
         default:
             break;
         }
